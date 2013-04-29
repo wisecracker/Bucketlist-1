@@ -18,7 +18,7 @@ context "The TodoItems Controller" do
 
 	should "give me 3 Todo Items" do 
 
-		assert_equal 3, assigns(:todo_items).length
+		assert_equal 3, assigns(:items).length
 
 		assert_equal TodoItem, assigns(:items).first.class
 
@@ -31,7 +31,8 @@ end
 		end
 
 	should "give me 1 Todo Items" do 
-		assert_equal TodoItem.find(1), assigns(:items)
+		
+		assert_equal TodoItem.find(1), assigns(:item)
 	
 
 		end
