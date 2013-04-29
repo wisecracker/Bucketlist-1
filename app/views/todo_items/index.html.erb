@@ -1,7 +1,8 @@
-<h1> Listing To Do</h1>
+<h1> Listing To Do </h1>
 
 <% @items.each do |item| %>
 
 	<%= item.name %>
-
+	<%= link_to 'Show', item %>
 <% end %>
+<%= render 'form' %>

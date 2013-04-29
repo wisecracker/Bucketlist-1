@@ -8,5 +8,10 @@ class TodoItemsController < ApplicationController
 		@item = TodoItem.find(params[:id])
 	end
 
+	def create
+		@item = TodoItem.new
+		@item.save!
+
+	end
 
 end

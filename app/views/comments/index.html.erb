@@ -3,5 +3,6 @@
 <% @comments.each do |comment| %>
 
 	<%= comment.body %>
+	 <p><%= link_to 'Destroy', comment, method: :delete %></p>
 
 <% end %>

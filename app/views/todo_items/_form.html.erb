@@ -1,0 +1,25 @@
+
+
+<div class = "new-todo">
+
+	<h3>New To Do</h3>
+
+
+<%= form_for(TodoItem.new) do |f| %>
+
+
+
+
+<div class = "field">
+		<%= f.text_field :name %>
+
+</div>
+<div class = "field">
+		<%= f.submit  %>
+
+</div>
+
+<% end %>
+
+
+</div>
