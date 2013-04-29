@@ -3,7 +3,9 @@ class CommentsController < ApplicationController
 
  # before_filter  ,:only => [:show, :create, :update, :delete]
 
-
+ def index
+ 	@comments = Comments.all 
+ end
 
 
 	def create

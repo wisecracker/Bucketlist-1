@@ -4,7 +4,7 @@ class TodoItemsControllerTest < ActionController::TestCase
 
 context "The TodoItems Controller" do 
 	setup do 
-		3.times { TodoItem.create }
+		3.times{ TodoItem.create }
 	end
 
 	context "GET to index" do 

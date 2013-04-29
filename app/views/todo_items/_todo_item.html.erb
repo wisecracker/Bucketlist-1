@@ -1,18 +1,22 @@
 <div class = "todo-item <%=  todo_item.completed? ? 'completed' : '' %>">
 	<%= todo_item.name %>
 </div>
+<div class = "info">
+		<%= distance_of_time_in_words(todo_item.created_at) %>
+
+</div>
 
 <div class = "comments">
-	<%= todo_item.comments.each do |comment| %>
+	<% todo_item.comments.each do |comment| %>
 		<% render comment %>
 	<% end %>
 
-<%= render :partial => 'comment/form' %>
-
 </div>
-	<div class = "info">
-		<%= distance_of_time_in_words(todo_item.created_at)
-%>
 
-	ago
-</div>
+
+<%= render :partial => 'comments/form', :locals => { :item => todo_item } %>
+
+
+
+
+
