@@ -9,9 +9,9 @@ class TodoItemsController < ApplicationController
 	end
 
 	def create
-		@item = TodoItem.new
+		@item = TodoItem.new(params[:todo_item])
 		@item.save!
-
+		
 	end
 
 end
