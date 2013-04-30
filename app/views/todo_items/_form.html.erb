@@ -7,7 +7,11 @@
 <div class = "todo_form">
 
 		<h3>New To Do</h3>
-<%= form_for(TodoItem.new, :remote => true) do |f| %>
+<%= form_for(TodoItem.new(:destination_id => destination_id), :remote => true) do |f| %>
+
+
+
+		<%= f.hidden_field :destination_id %>
 
 
 
@@ -23,13 +27,14 @@
 		<%= f.text_field :location %>
 
 </div>
+<br/>
 <div class = "field">
 		<%= f.submit  %>
 
 </div>
+<br/>
 
 <% end %>
 
 
 </div>
-<br/>

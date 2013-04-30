@@ -1,16 +1,16 @@
-<div id = "main">
-
-<%= render 'destinations/destination' %>
-<% @items.each do |item| %>
-
-	<h2><%= render item %></h2>
-
-<% end %>
-
-</div>
 
 
-<%= render 'todo_items/form' %>
+
+
+
+<% @destinations.each do |d| %>
+
+  <%= render d %>
+
+  <% end %>
+
+
+
 
 
 
@@ -42,4 +42,7 @@ function initialize() {
 
 </script>
 
+<div id = "form_map">
+
 <div id = "map-canvas"/>
+</div>

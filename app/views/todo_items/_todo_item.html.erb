@@ -1,10 +1,10 @@
 
 
-	<div class = "todo_items <% todo_item.completed? ? 'completed' : '' %>">
-		<h2><%= todo_item.name %></h2>
+<div class = "todo_items<%=todo_item.destination_id%> <% todo_item.completed? ? 'completed' : '' %>">
+<h2><%= todo_item.name %></h2>
 		
  	
-	</div>
+
 
 	<div class = "info">
 		<%= distance_of_time_in_words(todo_item.created_at) %>
@@ -22,5 +22,5 @@
 <%= render :partial => 'comments/form', :locals => { :item => todo_item } %>
 
 
-
+</div>
 

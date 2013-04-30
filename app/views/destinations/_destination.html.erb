@@ -1,9 +1,14 @@
+<div id ="main">
+<h2><%= destination.name %></h2>
+
+<% destination.todo_items.each do |d| %>
 
 
-<% @destinations.each do |d| %>
+<h2><%= render d %></h2>
 
-<div class ="destinations">
-<h2><%= d.name %></h2>
-</div>
+
+
 <% end %>
 
+<%= render :partial => 'todo_items/form', :locals => { :destination_id => destination.id } %> 
+</div>
