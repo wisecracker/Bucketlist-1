@@ -2,7 +2,9 @@
 
 <% @items.each do |item| %>
 
-	<%= item.name %>
-	<%= link_to 'Show', item %>
+	<h2><%= render item %></h2>
+
+
 <% end %>
-<%= render 'form' %>
+
+<%= render 'todo_items/form' %>

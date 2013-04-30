@@ -11,7 +11,7 @@ class TodoItemsController < ApplicationController
 	def create
 		@item = TodoItem.new(params[:todo_item])
 		@item.save!
-		
+		render @item
 	end
 
 end

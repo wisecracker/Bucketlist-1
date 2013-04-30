@@ -1,8 +1,0 @@
-<h1> Listing Comments</h1>
-
-<% @comments.each do |comment| %>
-
-	<%= comment.body %>
-	 <p><%= link_to 'Destroy', comment, method: :delete %></p>
-
-<% end %>

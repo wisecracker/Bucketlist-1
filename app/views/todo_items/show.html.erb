@@ -1,4 +1,22 @@
-<h1>To Do List</h1>
+<h1>To Do Item:</h1>
+
+<div class = "todo_items <%=  @item.completed? ? 'completed' : '' %>">
+	<h2><%= @item.name %></h2>
+</div>
+<div class = "info">
+		<%= distance_of_time_in_words(@item.created_at) %>
+
+</div>
+
+<div class = "comments">
+	<% @item.comments.each do |comment| %>
+		<%= render comment %>
+
+	<% end %>
+
+</div>
 
 
-	<%= render @item %>
+<%= render :partial => 'comments/form', :locals => { :item => @item } %>
+
+
