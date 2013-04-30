@@ -24,6 +24,18 @@ class CommentsControllerTest < ActionController::TestCase
 
 			end
 
+			
+				setup do 
+					xhr :post, :create, :comment => {:body => "blah"}
+				end
+
+
+			should "respond with JS" do 
+				assert_response :success 
+				assert_equal response.content_type, 'text/javascript'
+			
+			end
+
 		end
 	end
 

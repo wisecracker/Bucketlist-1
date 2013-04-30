@@ -5,6 +5,7 @@ require 'shoulda'
 require 'database_cleaner'
 require 'pry'
 
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.(yml|csv) for all tests in alphabetical order.
   setup do 

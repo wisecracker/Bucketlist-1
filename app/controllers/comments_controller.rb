@@ -19,14 +19,14 @@ def create
 			:content_type => 'text/html'#<== same thing as render @comment 
 		end
 	
-
+	end
 	#render :template => 'comments/create', :locals => { :comment => @comment }, 
 	#:content_type => 'text/javascript'
 end
-def destroy
-    @comment = Comment.find(params[:id])
-    @comment.destroy
+# def destroy
+#     @comment = Comment.find(params[:id])
+#     @comment.destroy
 
-end
+# end
 
 end
