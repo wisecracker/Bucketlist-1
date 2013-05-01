@@ -4,14 +4,15 @@
 
 
 #map-canvas {
-	height: 1000px;
-	width: 1000px;
+
 	border: 1px solid black;
-	margin: 0 auto;
   -moz-box-shadow:    3px 5px 3px 5px #000;
   -webkit-box-shadow: 3px 5px 3px 5px #000;
   box-shadow:         3px 5px 3px 5px #000;
-  margin-right: 5px;
+
+  	height: 800px;
+	width: 1000px;
+	  margin: 0 auto;
 }
 
 .destinations{
@@ -19,7 +20,28 @@
 	width: 200px;
 	border: 1px solid black;
 	background-color: white;
-	float: left;
-	margin-left: 50px;
+	
+	
+	
+}
+
+.destination_name{
+	height: 100px;
+	width: 400px;
+	border: 1px solid black;
+	background-color: lightgray;
+	color: black;
+	-moz-box-shadow:    inset 0 0 10px #000000;
+   -webkit-box-shadow: inset 0 0 10px #000000;
+   box-shadow:         inset 0 0 10px #000000;
+
+	
+}
+
+.destination_div{
+float: left;
+margin-left: 100px;
+	
+	
 	
 }

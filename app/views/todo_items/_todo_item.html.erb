@@ -1,7 +1,7 @@
 
 <div class = "todo_items <% todo_item.completed? ? 'completed' : '' %>">
 <h3 id = "name"><%= todo_item.name %></h3>
-	
+	 <p><%= link_to "Delete: #{todo_item.name}", todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></p>
  	<h3> Comments </h3>
 
 	
@@ -17,7 +17,7 @@
 </div>
 
 <%= render :partial => 'comments/form', :locals => { :item => todo_item } %>
- <p><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+
 <div class = "info">
 		<%= distance_of_time_in_words(todo_item.created_at) %>
 </div>

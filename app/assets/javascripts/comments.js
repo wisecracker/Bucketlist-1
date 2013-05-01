@@ -8,4 +8,11 @@ $('body').bind('ajax:success', function(e, data) {
 	var itemId = $('<div>').append(data).children().first().data("item-id");
 	$('.comments-' + itemId).append(data);
 		});
+
+	$(".toggle").click(function () {
+   $('.new-comment').slideToggle();
+});
+
+
+
 	});

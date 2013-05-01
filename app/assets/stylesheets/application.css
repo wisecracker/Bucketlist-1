@@ -19,7 +19,7 @@ body{
 }
 
 #form_map{
-	float:right;
+	margin: 0 auto;
 }
 
 .toggle{
@@ -32,8 +32,10 @@ body{
 
 h3#name {
 
-color: green;
+color: black;
 border: 1px solid black;
+font-size: 30px;
+background-color: #FFDA8A;
 
 }
 
@@ -51,10 +53,20 @@ border: 1px solid black;
 	margin-bottom: 50px;
 	color: white;
 	border: 3px solid white;
+	 -moz-box-shadow:    3px 5px 3px 5px #000;
+  	-webkit-box-shadow: 3px 5px 3px 5px #000;
+  	box-shadow:         3px 5px 8px 2px #000;
 }
 
 #nav > h1 {
 	text-align: center;
-	font-size: 40px;
-	padding-top: 50px;
+	font-size: 50px;
+	padding-top: 25px;
+	font-family: Futura;
 }
+
+a {
+	text-decoration: none;
+	font-weight: bold;
+}
+
