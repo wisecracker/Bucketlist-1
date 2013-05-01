@@ -22,11 +22,11 @@ function initialize() {
         };
         var map = new google.maps.Map(document.getElementById("map-canvas"),
             mapOptions);
-         // var marker = new google.maps.Marker({
-       //  	position: new google.maps.LatLng(40.7399977, -73.9900966),
-       //  	map: map,
-       //  	title: "hello world"
-       // });
+        var marker = new google.maps.Marker({
+        	position: new google.maps.LatLng(40.7399977, -73.9900966),
+         	map: map,
+         	title: "hello world"
+        });
       // <% TodoItem.all.each do |item| %>
       //    addMarker(<%=item.latitude%>, <%=item.longitude%>, '<%=item.name%>');
       //    <% end %>

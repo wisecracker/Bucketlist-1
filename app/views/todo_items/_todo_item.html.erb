@@ -17,7 +17,7 @@
 </div>
 
 <%= render :partial => 'comments/form', :locals => { :item => todo_item } %>
-
+ <p><%= link_to 'Destroy', todo_item, method: :delete, data: { confirm: 'Are you sure?' } %></p>
 <div class = "info">
 		<%= distance_of_time_in_words(todo_item.created_at) %>
 </div>

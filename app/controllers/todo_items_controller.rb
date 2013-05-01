@@ -16,4 +16,14 @@ class TodoItemsController < ApplicationController
 		render @item
 	end
 
+	  def destroy
+    @item = TodoItem.find(params[:id])
+    @item.destroy
+     respond_to do |format|
+      format.html { redirect_to todo_items_url }
+    
+    end
+
+    end
+
 end
