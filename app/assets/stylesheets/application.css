@@ -29,3 +29,32 @@ body{
 	
 
 }
+
+h3#name {
+
+color: green;
+border: 1px solid black;
+
+}
+
+#nav{
+
+	margin-top: -30px;
+	margin-left: -10px;
+	width: 102%;
+	height: 150px;
+	background-image: linear-gradient(bottom, rgb(21,26,25) 38%, rgb(76,82,81) 69%, rgb(169,161,171) 85%);
+	background-image: -o-linear-gradient(bottom, rgb(21,26,25) 38%, rgb(76,82,81) 69%, rgb(169,161,171) 85%);
+	background-image: -moz-linear-gradient(bottom, rgb(21,26,25) 38%, rgb(76,82,81) 69%, rgb(169,161,171) 85%);
+	background-image: -webkit-linear-gradient(bottom, rgb(21,26,25) 38%, rgb(76,82,81) 69%, rgb(169,161,171) 85%);
+	background-image: -ms-linear-gradient(bottom, rgb(21,26,25) 38%, rgb(76,82,81) 69%, rgb(169,161,171) 85%);
+	margin-bottom: 50px;
+	color: white;
+	border: 3px solid white;
+}
+
+#nav > h1 {
+	text-align: center;
+	font-size: 40px;
+	padding-top: 50px;
+}
